@@ -44,10 +44,8 @@ def main():
             gif_path = generate_sign_language_gif(input_text)
             
             # Display the generated GIF
-            st.image(gif_path, use_column_width=True, caption="Sign Language GIF")
+            st.image(gif_path, use_column_width=True, caption=f"{input_text} GIF")
             
-            # Add some fantastic text with emojis
-            st.markdown("This is a fantastic sign language GIF! ✌️👏🎉")
 
 if __name__ == "__main__":
     main()
