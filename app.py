@@ -27,7 +27,7 @@ def generate_sign_language_gif(input_text):
 
     # Create a GIF by combining the images
     images = [Image.open(filename) for filename in image_filenames]
-    images[0].save("sign_language.gif", save_all=True, append_images=images[1:], loop=0, duration=500)
+    images[0].save("sign_language.gif", save_all=True, append_images=images[1:], duration=500)
 
     return "sign_language.gif"
 
