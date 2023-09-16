@@ -4,13 +4,16 @@ import os
 
 # Function to generate the sign language GIF
 def generate_sign_language_gif(input_text):
-    # Get the absolute path to the folder containing sign language images (A to Z)
-    image_folder = os.path.abspath("sign_language_images")
+    # Folder containing sign language images (a to z)
+    image_folder = "sign_language_images"
+
+    # Convert the input text to lowercase
+    input_text = input_text.lower()
 
     # Split the input text into words
     words = input_text.split()
 
-    # Create a list of absolute image filenames for each letter in the input text
+    # Create a list of image filenames for each letter in the input text
     image_filenames = []
 
     for letter in input_text:
